@@ -1,0 +1,68 @@
+@import url("./reset.css");
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f5f4; 
+    box-shadow: 0 4px 6px rgb(0, 0, 0, 0.1);
+}
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "aside1"
+      "column1"
+      "column2"
+      "column3"
+      "aside2"
+      "footer";
+      
+    gap: 10px;
+    width: 300px;
+  }
+  
+  header {
+    grid-area: header;
+    background-color: rgb(254, 113, 184);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgb(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .aside1 {
+    grid-area: aside1;
+    background-color: #1e90ff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .column1, .column2, .column3 {
+    background-color: rgb(215, 243, 36);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .column1 { grid-area: column1; }
+  .column2 { grid-area: column2; }
+  .column3 { grid-area: column3; }
+  
+  .aside2 {
+    grid-area: aside2;
+    background-color: skyblue;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  footer {
+    grid-area: footer;
+    background-color: orange;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  
