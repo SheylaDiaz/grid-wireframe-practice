@@ -9,8 +9,6 @@
   .aside1 {
     background-color: #1e90ff;
     text-align: center;
-    height: 6vh;
-    margin: 10px;
   
   }
   article{
@@ -38,7 +36,7 @@
     background-color: skyblue;
     padding: 10px;
     text-align: center;
-    margin: 10px;
+  
   }
   
   footer {
@@ -47,3 +45,62 @@
     text-align: center;
     font-weight: bold;
   }
+@media screen and (min-width: 745px) {
+ body{
+  background-color: aqua;
+
+}
+header, footer {
+  background-color: pink;
+  height: 15vh;
+  font-size: 2rem;
+  text-decoration: underline solid rgb(9, 99, 224);
+  border-radius: 10px;
+  display: grid;
+  grid-column: 1 /-1;
+  justify-content: center;
+
+
+}
+.line2{
+  display: grid;
+  grid-template-columns: 19% 60% 19%;
+  margin:1%;
+  gap: 1%;
+
+
+
+}
+
+.aside1, .aside2{
+  background-color: skyblue;
+  text-align: center;
+  color: white;
+  text-decoration: underline blue;
+  font-size: 1.5rem;
+
+}
+
+.container {
+  background-color: rgb(219, 14, 14);
+  display: grid;
+  margin: 20px;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+justify-self: center;
+}
+
+.column {
+  background-color: rgb(31, 41, 178);
+  color: white;
+  font-weight: bold;
+  border-radius: 1;
+  display: grid;
+  justify-content: center;
+  height: 40%;
+
+
+  
+ 
+}
+}
